@@ -12,8 +12,8 @@ RUN apt-get update \
 RUN mkdir -p opt/oracle
 ADD ./oracle/osx/ .
 
-RUN unzip instantclient-basic-macos.x64-12.1.0.2.0.zip -d /opt/oracle \
-  && unzip instantclient-sdk-macos.x64-12.1.0.2.0.zip -d /opt/oracle  \
+RUN unzip instantclient-basic-macos.x64-11.2.0.4.0.zip -d /opt/oracle \
+  && unzip instantclient-sdk-macos.x64-11.2.0.4.0.zip -d /opt/oracle  \
   && mv /opt/oracle/instantclient_12_1 /opt/oracle/instantclient \
   && ln -s /opt/oracle/instantclient/libclntsh.so.12.1 /opt/oracle/instantclient/libclntsh.so \
   && ln -s /opt/oracle/instantclient/libocci.so.12.1 /opt/oracle/instantclient/libocci.so
