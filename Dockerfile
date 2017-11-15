@@ -1,5 +1,5 @@
 # INSTALL NODE
-FROM node:9.1.0-alpine
+FROM node:9.1.0
 
 RUN apt-get update \
   && apt-get install -y libaio1 \
