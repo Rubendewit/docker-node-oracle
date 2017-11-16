@@ -15,5 +15,5 @@ Docker image to be used for building a container ready with Oracle instant clien
 Within your Dockerfile:
 
 ```
-FROM rdwit/node-oracle-db
+FROM rdwit/docker-node-oracle:latest
 ```
